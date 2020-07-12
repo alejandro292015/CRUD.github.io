@@ -16,7 +16,7 @@
         <label for="idd" class="col-form-label col-4">ID:</label>
     
           <div class="col-8">
-              <input type="text" formControlName="idd" maxlength="50" class="form-control" name="idd" id="idd" required [(ngModel)]="empleados.id"  />
+              <input type="text" formControlName="idd" maxlength="50" class="form-control" name="idd" id="idd" required [(ngModel)]="empleados.id"  disabled/>
               <div *ngIf="frmAgregarEmpleado.get('idd').errors?.required" class="invalid-tooltip">
                   Este campo es obligatorio
                 </div>
