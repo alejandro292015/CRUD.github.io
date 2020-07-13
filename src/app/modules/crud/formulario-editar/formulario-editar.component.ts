@@ -65,11 +65,10 @@ export class FormularioEditarComponent implements OnInit {
       this.frmAgregarEmpleado = this.formBuilder.group({
       idd: this.formBuilder.control('', [Validators.required]),
 
-      nombre: this.formBuilder.control('', [Validators.required,Validators.maxLength(40)]),
-      apellido: this.formBuilder.control('', [Validators.required]),
-      id: this.formBuilder.control('', [Validators.required]),
-      correo: this.formBuilder.control('', [Validators.required,Validators.maxLength(40)])
-     
+      nombre: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)]),
+      apellido: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)]),
+      id: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)]),
+      correo: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)])
     });
   }
 

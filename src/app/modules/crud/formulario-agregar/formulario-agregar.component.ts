@@ -24,11 +24,11 @@ export class FormularioAgregarComponent implements OnInit {
 
   ) {
     this.empleados = new Empleados()
+    this.validacionesCampos()
 
   }
   
   ngOnInit() {
-    this.validacionesCampos()
   }
 
   cancelar(){
@@ -52,10 +52,10 @@ export class FormularioAgregarComponent implements OnInit {
   validacionesCampos() {
     debugger
     this.frmAgregarEmpleado = this.formBuilder.group({
-      nombre: this.formBuilder.control('', [Validators.required,Validators.maxLength(40)]),
-      apellido: this.formBuilder.control('', [Validators.required]),
-      id: this.formBuilder.control('', [Validators.required]),
-      correo: this.formBuilder.control('', [Validators.required,Validators.maxLength(40)])
+      nombre: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)]),
+      apellido: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)]),
+      id: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)]),
+      correo: this.formBuilder.control('', [Validators.required,Validators.maxLength(50)])
      
     });
   }

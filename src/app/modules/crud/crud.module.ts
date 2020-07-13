@@ -5,6 +5,7 @@ import { FormularioAgregarComponent } from './formulario-agregar/formulario-agre
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { FormularioEditarComponent } from './formulario-editar/formulario-editar.component';
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
 
@@ -13,8 +14,8 @@ import { FormularioEditarComponent } from './formulario-editar/formulario-editar
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ]
 })
 export class CrudModule { }
